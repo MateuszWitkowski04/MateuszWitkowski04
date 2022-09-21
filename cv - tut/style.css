@@ -1,0 +1,176 @@
+/*style umieszczone w body zmieniaja wszystkim grupom
+np body{
+    font-family: Arial
+}
+*/
+body h1{
+    color: black;
+}
+
+h2{
+    color: black;
+}
+
+body {
+    color: grey;
+    background-color: azure;
+    padding: 40px 0;
+}
+
+body b{
+    color: black;
+}
+
+.cv{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;  /*gora prawo dol lewo*/
+    margin-top: 15 px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px grey;
+    transition: background-color 0.75s, color 0.75s;  /*transition jako transformacja (przejscie) zmienia z podstawowego koloru zawartego w danej klasie na kolor podany w pseudoklasie cv:hover*/
+}
+
+.margin{
+    margin-top: 15px ;
+}
+
+.cv:hover{       /*hover - stan gdy nad linkiem jest kursor*/
+     color: white;
+     background-color: black;
+     border-color: black;
+}
+
+.cv:focus {       /*focus - stan gdy obiekt zaznaczony jest tabem*/
+    outline: none;
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+.cv:active{      /*active - stan gdy element jest aktywny(przytrzymany)*/
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.about li{
+    color: grey;
+}
+
+.experience li{
+    color: grey;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 40px;
+}
+
+
+h2 {
+    font-size: 28px; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+
+} 
+
+h3 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+span {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 120px;
+
+}
+
+img{
+    width:  150px; 
+    height: 150px; 
+} 
+
+.icons{
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    margin-right: 10px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.zainteresowania-ikony{
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.circle{
+    border-radius: 50%; /*wygladza krawedzie, wartosc o wielkosci obiektu zrobi kolo*/
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20 px;
+}
+
+.cvsheet{
+     box-shadow: 0 0 20px grey;
+     background-color: white;
+     width: 960px;
+     margin: 0 auto;
+}
+
+header, section{
+    padding: 10px 60px 20px 60px;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+}
+
+header ul{
+    list-style: none;
+}
+
+header li{
+    margin-bottom: 7px;
+}
+
+.hobby{
+    list-style: none;
+    padding: 0;
+    display: flex; /*wszystkie dzieci w .hobby ustawia sie obok siebie dzieki flex*/
+    flex-wrap: wrap; /*flex wrap wrap bo domyslnie flex ignoruje wielkosci elementow w stylach*/
+}
+
+.hobby li{
+    width: 50%; /*element miesci sie na polowie ekranu, drugi tez i automatycznie kolejne przeskakuja do kolejnej linii 
+    aby umiesci po 2 w kolumnie, dla np 3 w kolumnie bedzie to 33,3%*/
+    display: flex;
+    align-items: flex-start;
+}
+
+.hobby p {
+    line-height: 1,5 ;
+}
